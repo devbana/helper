@@ -65,3 +65,16 @@ def view_random_image(target_dir, target_class):
   print(f'Image Shape : {img.shape}')
   return img
 
+def unzip_data(name_):
+  import zipfile
+  zip_ref = zipfile.ZipFile(name_)
+  zip_ref.extractall()
+  zip_ref.close()
+  
+def list_dir(name_):
+  import os
+  for dir_path, dirnames, filenames in os.walk('10_food_classes_10_percent'):
+    print(f'There are {len(dirnames)} directories and {len(filenames)} images in {dir_path}')
+
+
+
