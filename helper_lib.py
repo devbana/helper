@@ -3,6 +3,7 @@ import tensorflow_hub as hub
 import tensorflow as tf
 import matplotlib.pyplot as plt
 from tensorflow.keras import layers
+import datetime
 
 INPUT_SHAPE = (224, 224)
 BATCH = 32
